@@ -2,27 +2,148 @@
 <html>
 <head>
 <title>Garry Huang's Portfolio</title>
-<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 </head>
 	<body>
-	<script src = "script.js"></script>
-	<ul>
-		<li><a class = "active" href="index.html">Home</a></li>
-		<li class="dropdown">
-		    <a href="javascript:void(0)" class="dropbtn" onclick="myFunction()">Projects</a>
-		    <div class="dropdown-content" id="myDropdown">
-		      <a href="kiosk.html">MiniAT Kiosk</a>
-		      <a href="bomb.html">Bomb Sweeper</a>
-		      <a href="jclass.html">jClass Designer</a>
-		      <a href="smip.html">Social Media Improvement Platform</a>
-		    </div>
-  		</li>
-		<li><a href="aboutme.html">About Me</a></li>
-		<li><a href="resume.pdf">My Resume</a></li>
-	</ul>
+	<script src = "js/jquery-3.1.1.js"></script>
+	<script src = "js/bootstrap.js"></script>
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav">
+	        <li class="active"><a href="#">Index<span class="sr-only">(current)</span></a></li>
+	        <li><a href="#" data-toggle = "modal" data-target="#myModal">My Resume</a></li>
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
+	          <ul class="dropdown-menu">
+	            <li><a href="#" data-toggle ="modal" data-target="#kioskModal">MiniAT Kiosk</a></li>
+	            <li><a href="#"data-toggle ="modal" data-target = "#bombModal">Bomb Sweeper</a></li>
+	            <li><a href="#" data-toggle = "modal" data-target = "#classModal">jClass Designer</a></li>
+	            <li role="separator" class="divider"></li>
+	            <li><a>In Progress</a></li>
+	            <li role="separator" class="divider"></li>
+	            <li><a href="#" data-toggle = "modal" data-target="#smipModal">Social Media Improvement Platform</a></li>
+	          </ul>
+	        </li>
+	      </ul>
+	      <form class="navbar-form navbar-left">
+
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+</nav>
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+ <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			        <h4 class="modal-title" id="myModalLabel">My resume</h4>
+			      </div>
+			      <div class="modal-body">
+			      	<object data="resources/resume.pdf" type="application/pdf" width="100%" height ="550px"></object>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			      </div>
+			    </div>
+			  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="kioskModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">MiniAT Kiosk</h4>
+      </div>
+      <div class="modal-body">
+      	<img src="resources/kioskimage.png" alt="MiniAT Kiosk" style="width: 850px;height:400px">
+        <p><b>Technologies used:</b> C++, SDL 2.0, Assembly language
+        <p><b>Description:</b> The MiniAT kiosk provides a method to replicate the functionality
+        of a physical kiosk inside the MiniAT microprocessor.  It comes with the
+        following peripherals: screen, keypad, and receipt printer
+        <p><b>Github Link:</b> <a href= "https://github.com/garryhuang1/MiniATKiosk">Here</a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="bombModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Bomb Sweeper</h4>
+      </div>
+      <div class="modal-body">
+      	<img src="resources/kioskimage.png" alt="MiniAT Kiosk" style="width: 850px;height:400px">
+        <p><b>Technologies used:</b> MIPS assembly language
+        <p><b>Description:</b> A replica of minesweeper programmed in MIPS assembly language.
+        <p><b>Github Link:</b> <a href= "https://github.com/garryhuang1/Bombsweeper">Here</a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="classModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">jClass Designer</h4>
+      </div>
+      <div class="modal-body">
+      	<img src="resources/jclassimage.png" alt="MiniAT Kiosk" style="width: 850px;height:400px">
+        <p><b>Technologies used:</b> Java, JavaFX,Json, HTML, CSS, XML
+        <p><b>Description:</b> jClass Designer is a java application used to help create Java programs
+        based off UML class diagrams.  Using various algorithms, it can provide complete detail regarding all packages, instanc variables,
+        and other nercessities to build the application.
+        <p><b>Github Link:</b> <a href= "https://github.com/garryhuang1/jClass-Designer">Here</a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="smipModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Social Media Improvement Platform</h4>
+      </div>
+      <div class="modal-body">
+        <p><b>Technologies used:</b> Java, HTML, Javascript
+        <p><b>Description:</b> The Social Media Improvement Platform is designed to help counter cyber-bullying through peer-reviewing
+        of online posts that may be deemed as offensive.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<p>Welcome to my website!
 	</body>
-	<div class = "main-content">
-	Welcome to my website!  I am Garry Huang, a senior at Stony Brook University as well as an aspiring software engineer.  Here you can find out more about me, as well as the projects
-	</br>that I have completed or am still working on.
-	</div>
+
+
 </html>
