@@ -1122,7 +1122,7 @@ img {
 .carousel-inner > .item > a > img {
   display: block;
   max-width: 100%;
-  height: auto;
+  width: 100%;
 }
 .img-rounded {
   border-radius: 6px;
@@ -5878,7 +5878,7 @@ button.close {
   -webkit-overflow-scrolling: touch;
   outline: 0;
 }
-.modal.fade .modal-dialog {
+.modal.fade .modal-dialog .modal-dialog.lg{
   -webkit-transition: -webkit-transform .3s ease-out;
        -o-transition:      -o-transform .3s ease-out;
           transition:         transform .3s ease-out;
@@ -5887,7 +5887,8 @@ button.close {
        -o-transform: translate(0, -25%);
           transform: translate(0, -25%);
 }
-.modal.in .modal-dialog {
+
+.modal.in .modal-dialog .modal-dialog-lg{
   -webkit-transform: translate(0, 0);
       -ms-transform: translate(0, 0);
        -o-transform: translate(0, 0);
@@ -5898,6 +5899,11 @@ button.close {
   overflow-y: auto;
 }
 .modal-dialog {
+  position: relative;
+  width: auto;
+  margin: 10px;
+}
+.modal-dialog-lg{
   position: relative;
   width: auto;
   margin: 10px;
@@ -5983,7 +5989,7 @@ button.close {
     margin: 30px auto;
   }
   .modal-dialog-lg {
-  	width:900px;
+  	width:1400px;
   	max-height:700px;
   }
 }
@@ -6776,4 +6782,5 @@ button.close {
 .introContainer{
 	font-size:16pt;
 }
+
 /*# sourceMappingURL=bootstrap.css.map */
