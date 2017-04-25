@@ -12,10 +12,10 @@
 	<script src = "js/bootstrap.js"></script>
 
 
-	   
+
 
 	    <!-- Collect the nav links, forms, and other content for toggling -->
-	   
+
 	      <ul class="nav navbar-nav">
 	        <li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
 	        <li><a href="#" data-toggle = "modal" data-target="#myModal">My Resume</a></li>
@@ -25,12 +25,13 @@
 	            <li><a href="#" data-toggle ="modal" data-target="#kioskModal">MiniAT Kiosk</a></li>
 	            <li><a href="#" data-toggle ="modal" data-target = "#bombModal">Bomb Sweeper</a></li>
 	            <li><a href="#" data-toggle ="modal" data-target = "#classModal">jClass Designer</a></li>
+	            <li><a href="#" data-toggle = "modal" data-target="#seawolfScriptModal">Seawolf Script</a></li>
 	            <li role="separator" class="divider"></li>
 	            <li><a>In Progress</a></li>
 	            <li role="separator" class="divider"></li>
 	            <li><a href="#" data-toggle = "modal" data-target="#smipModal">Social Media Improvement Platform</a></li>
 	            <li><a href="#" data-toggle = "modal" data-target="#almostNetflixModal">Light Movie Rental Environment</a></li>
-	            <li><a href="#" data-toggle = "modal" data-target="#seawolfScriptModal">Seawolf Script</a></li>
+
 	          </ul>
 	          <li><a href="#" data-toggle = "modal" data-target = #aboutModal>Hobbies</a></li>
 	          <li><a href="#" data-toggle = "modal" data-target = "#contactModal">Contact Me</a></li>
@@ -49,29 +50,34 @@
 	      <form class="navbar-form navbar-left">
 
 	      </ul>
-	    
+
 
 </nav>
-	<center>
+
     <div class="container">
+
 		<div class="row">
 		<div class = "col-lg-12">
 		<h2>Welcome to my Website</h2>
+
+
           	<div class="introContainer">
+          	<img src="resources/profile.jpg" align = "right" class = "profile_picture" style="width: 35%; height: 100%"/>
          	 	<p>Hi, my name is Garry Huang.  I am a senior at Stony Brook University as well as a transfer student
 				from SUNY Polytechnic Institute.  As an aspiring
-         		 software engineer, I hope to design products of the future.  
+         		 software engineer, I hope to design products of the future.
 				 You can find out more about me and my work on my website.</p>
+
 			</div>
 		</div>
         </div>
-		
+
 		<div class = "row">
 			<div class = "col-lg-12">
           <h2>Relevant Coursework</h2>
-		  
+
           <div class="columnContainer">
-		
+
           <p>
 
 			<ul>
@@ -97,7 +103,7 @@
 				</ul>
 			</ul>
           </p>
-		  
+
 		  </div>
           </div>
 			<div class = "col-lg-12">
@@ -106,29 +112,38 @@
 				<ul>
 					<li>FragranceX Web Developer Intern
 					<div class = "courseContainer">
-							hi
+					<p>(June 2017 - August 2017)</p>
+							<p>Worked on projects and tasks focused on asp.net-mvc, C#, jquery, javascript/html/css,
+							tsql, and Microsoft SQL.  Also worked on responsive design, continuous integration, and automated deployment.</p>
 					</div>
 					</li>
 					<li>CSE 114 Teaching Assistant
 					<div class = "courseContainer">
-					114 info
+					<p>(January 2017 - present)</p>
+						<p>Introduced to students procedural and object-oriented programming methodology, as well as topics in program structure,
+						conditional and iterative programming, procedures, arrays and records, object classes, encapsulation, information hiding,
+						inheritance, polymorphism, file I/O and exceptions.</p>
 					</div>
 					</li>
 					<li>CSE 219 Teaching Assistant
 					<div class = "courseContainer">
-					219 info
+						<p>(August 2016 - December 2016)</p
+						<p>Introduced to students practical programming skills that included a systematic approach to program design,
+						coding, testing, and debugging.  As well as applying these skills to the construction of robust programs of
+						1000 to 2000 lines of source code and using programming environments and tools to aid in the software
+						development process.  </p>
 					</div>
 					</li>
-					
+
 				</ul>
 				</div>
 			</div>
-			
+
 	   </div>
-	   
+
     </div>
-	</center>
-	
+
+
 
 <!-- Resume Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -136,7 +151,7 @@
 			    <div class="modal-content">
 			      <div class="modal-header">
 			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-			        <h4 class="modal-title" id="myModalLabel">My resume</h4>
+			        <h4 class="modal-title" id="myModalLabel">Resume</h4>
 			      </div>
 			      <div class="modal-body">
 			      	<object data="resources/garry-huang-software-engineer-resume.pdf" type="application/pdf" width="100%" height ="800px"></object>
@@ -199,7 +214,7 @@
       </div>
       <div class="modal-body">
       	<img src="resources/jclassimage.png" alt="MiniAT Kiosk" style="width: 850px;height:400px">
-        <p><b>Technologies used:</b> Java, JavaFX,Json, HTML, CSS, XML
+        <p><b>Technologies used:</b> Java, JavaFX, Json, HTML, CSS, XML
         <p><b>Description:</b> jClass Designer is a java application used to help create Java programs
         based off UML class diagrams.  Using various algorithms, it can provide complete detail regarding all packages, instanc variables,
         and other nercessities to build the application.
@@ -240,10 +255,11 @@
         <h4 class="modal-title" id="myModalLabel">Light Movie Rental Environment</h4>
       </div>
       <div class="modal-body">
+      <img src="resources/LightMRE.jpg" alt="MiniAT Kiosk" style="width: 850px;height:400px">
         <p><b>Technologies used:</b> MySQL, Java, JavaScript, HTML, CSS, JDBC
-        <p><b>Description:</b> Almost Netflix is an online movie database similar to the original Netflix.  Almost Netflix allows users to order
+        <p><b>Description:</b> Light Movie Rental Environment is an online movie database.  The Light Movie Rental Environment allows users to order
         both physical copies and online copies of the movies and return them whenever they are done viewing them.
-        <p><b>Github Link: </b> Not available yet
+        <p><b>Github Link: </b> <a href= "https://github.com/YizhiYang/LightMRE">https://github.com/YizhiYang/LightMRE</a>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -260,9 +276,10 @@
         <h4 class="modal-title" id="myModalLabel">Seawolf Script</h4>
       </div>
       <div class="modal-body">
+       <img src="resources/seawolfscript.png" alt="MiniAT Kiosk" style="width: 750px;height:500px">
         <p><b>Technologies used:</b> Python, ANTLR4
-        <p><b>Description:</b> Seawolf Script is a new programming language developed using grammar rules and interpreted using Python.
-        <p><b>Github Link: </b> Not available yet
+        <p><b>Description:</b> Seawolf Script is a programming language developed using grammar rules provided by Antlr4 and interpreted using Python.
+        <p><b>Github Link: </b> <a href="https://github.com/garryhuang1/Seawolf-Script">https://github.com/garryhuang1/Seawolf-Script</a>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -279,7 +296,7 @@
         <h4 class="modal-title" id="myModalLabel">Contact Me</h4>
       </div>
       <div class="modal-body">
-        <p><b>Cell Phone Number:</b> (917)-373-1133
+        <p><b>Cell Phone Number:</b> (917) 373-1133
         <p><b>E-mail:</b> <a href="mailto:garry.huang@stonybrook.edu">garry.huang@stonybrook.edu</a>
         <p><b>GitHub:</b> <a href="https://github.com/garryhuang1">https://github.com/garryhuang1</a>
         <p><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/garry-huang-5b4081b0">https://www.linkedin.com/in/garry-huang-5b4081b0</a>
@@ -296,7 +313,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">About Me</h4>
+        <h4 class="modal-title" id="myModalLabel">Hobbies</h4>
       </div>
       <div class="modal-body">
       	Outside of school, I enjoy many other activities.  Some of which include traveling to other countries,

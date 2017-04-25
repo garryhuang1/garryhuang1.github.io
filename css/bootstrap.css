@@ -5951,7 +5951,7 @@ button.close {
 .modal-body {
   position: relative;
   padding: 15px;
-  max-height: calc(100vh - 155px);
+  max-height: calc(100vh - 150px);
   overflow-y: auto;
   
 }
@@ -6787,6 +6787,7 @@ button.close {
 	font-size:16pt;
 	width: 65%;
 	text-align: justify;
+	overflow:hidden;
 }
 .columnContainer{
 	font-size:16pt;
@@ -6795,7 +6796,13 @@ button.close {
 }
 .courseContainer{
 	font-size:12pt;
-	width:100%;
+	width:70%;
 	text-align:justify;
+}
+.profile_picture{
+
+  border-radius: 8px;
+  margin-left:40px;
+  
 }
 /*# sourceMappingURL=bootstrap.css.map */
