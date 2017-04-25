@@ -5951,7 +5951,7 @@ button.close {
 .modal-body {
   position: relative;
   padding: 15px;
-  max-height: calc(100vh - 150px);
+  max-height: calc(100vh - 100px);
   overflow-y: auto;
   
 }
@@ -6785,9 +6785,9 @@ button.close {
 }
 .introContainer{
 	font-size:16pt;
-	width: 65%;
+	width: 80%;
 	text-align: justify;
-	overflow:hidden;
+	
 }
 .columnContainer{
 	font-size:16pt;
@@ -6800,9 +6800,8 @@ button.close {
 	text-align:justify;
 }
 .profile_picture{
-
   border-radius: 8px;
-  margin-left:40px;
-  
+  padding-left: 100px;
+  overflow:hidden;
 }
 /*# sourceMappingURL=bootstrap.css.map */
