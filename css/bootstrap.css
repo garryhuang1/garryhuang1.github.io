@@ -6800,8 +6800,11 @@ button.close {
 	text-align:justify;
 }
 .profile_picture{
-  border-radius: 8px;
   padding-left: 100px;
   overflow:hidden;
+}
+.header{
+	position: relative;
+	left: 15%;
 }
 /*# sourceMappingURL=bootstrap.css.map */
