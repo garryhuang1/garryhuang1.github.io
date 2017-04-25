@@ -37,12 +37,12 @@
 			<li class="dropdown">
 	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CSE 300 Works <span class="caret"></span></a>
 	          <ul class="dropdown-menu">
-	            <li><a href="#" data-toggle ="modal" data-target="#kioskModal">Resume</a></li>
-	            <li><a href="#" data-toggle ="modal" data-target = "#bombModal">Cover Letter</a></li>
-	            <li><a href="#" data-toggle ="modal" data-target = "#classModal">User Instructions</a></li>
-	            <li><a href="#" data-toggle = "modal" data-target="#smipModal">Literature Review</a></li>
-	            <li><a href="#" data-toggle = "modal" data-target="#almostNetflixModal">Research Proposal</a></li>
-	            <li><a href="#" data-toggle = "modal" data-target="#seawolfScriptModal">Press Release</a></li>
+	            <li><a href="#" data-toggle ="modal" data-target="#myModal">Resume</a></li>
+	            <li><a href="#" data-toggle ="modal" data-target = "#coverLetterModal">Cover Letter</a></li>
+	            <li><a href="#" data-toggle ="modal" data-target = "#userInstructionModal">User Instructions</a></li>
+	            <li><a href="#" data-toggle = "modal" data-target="#literatureReviewModal">Literature Review</a></li>
+	            <li><a href="#" data-toggle = "modal" data-target="#researchProposalModal">Research Proposal</a></li>
+	            <li><a href="#" data-toggle = "modal" data-target="#pressReleaseModal">Press Release</a></li>
 	          </ul>
 	        </li>
 	      </ul>
@@ -388,7 +388,108 @@
     </div>
   </div>
 </div>
-
+<!-- Resume Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+ <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			        <h4 class="modal-title" id="myModalLabel">My resume</h4>
+			      </div>
+			      <div class="modal-body">
+			      	<object data="resources/garry-huang-software-engineer-resume.pdf" type="application/pdf" width="100%" height ="800px"></object>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			      </div>
+			    </div>
+			  </div>
+</div>
+<!-- Cover Letter Modal -->
+<div class="modal fade" id="coverLetterModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+ <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			        <h4 class="modal-title" id="myModalLabel">Cover Letter</h4>
+			      </div>
+			      <div class="modal-body">
+			      	<object data="resources/HighlightCoverLetter.pdf" type="application/pdf" width="100%" height ="800px"></object>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			      </div>
+			    </div>
+			  </div>
+</div>
+<!-- User Instructions Modal -->
+<div class="modal fade" id="userInstructionModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+ <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			        <h4 class="modal-title" id="myModalLabel">User Instructions</h4>
+			      </div>
+			      <div class="modal-body">
+			      	<object data="resources/UserInstructions.pdf" type="application/pdf" width="100%" height ="800px"></object>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			      </div>
+			    </div>
+			  </div>
+</div>
+<!-- Literature Review Modal -->
+<div class="modal fade" id="literatureReviewModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+ <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			        <h4 class="modal-title" id="myModalLabel">Literature Review</h4>
+			      </div>
+			      <div class="modal-body">
+			      	<object data="resources/NPComplete.pdf" type="application/pdf" width="100%" height ="800px"></object>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			      </div>
+			    </div>
+			  </div>
+</div>
+<!-- Research Proposal Modal -->
+<div class="modal fade" id="researchProposalModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+ <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			        <h4 class="modal-title" id="myModalLabel">Research Proposal</h4>
+			      </div>
+			      <div class="modal-body">
+			      	<object data="resources/NPcompleteresearchproposal.pdf" type="application/pdf" width="100%" height ="800px"></object>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			      </div>
+			    </div>
+			  </div>
+</div>
+<!-- Press Release Modal -->
+<div class="modal fade" id="pressReleaseModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+ <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			        <h4 class="modal-title" id="myModalLabel">Press Release</h4>
+			      </div>
+			      <div class="modal-body">
+			      	<object data="resources/press-release.pdf" type="application/pdf" width="100%" height ="800px"></object>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			      </div>
+			    </div>
+			  </div>
+</div>
 
 
 
